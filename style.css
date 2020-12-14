@@ -1,0 +1,143 @@
+/* ----- FONTS/IMPORTS ----- */
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* ----- BODY/HEADERS ----- */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Syne;
+}
+
+/* ----- HEADER ----- */
+/* ----- Navbar ----- */
+.navbar {
+    list-style-type: none;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #333;
+    color: white;
+    padding: 10px 50px;
+}
+
+.navbar li {
+    display: inline;
+    padding: 5px 10px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: lightblue;
+}
+
+/* ----- Menu Button ----- */
+.menubtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 0 8px 0;
+    cursor: pointer;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0 8px 8px 0;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .menubtn {
+    background-color: #3EACBD;
+}
+
+/* ----- MAIN ----- */
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1.25em;
+    background-image: linear-gradient(#D6E0C1, #84AD84);
+    opacity: 0.7;
+}
+
+.container p {
+    margin: 4px 0;
+}
+
+section {
+    margin: 0.5em auto;
+    padding: 0.25em 0;
+    border: 1px solid #25667050;
+    border-left: 5px solid #256670;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.section-header {
+    display: block;
+    margin: 0 0.75em;
+}
+
+.flex-container {
+    display: flex;
+}
+
+article {
+    max-width: 50%;
+    margin: 0.5em;
+    padding: 0.75em;
+    background-color: #256670;
+    border-radius: 10px;
+}
+
+code {
+    font-family: monospace;
+    padding: 2px 3px;
+    background-color: white;
+    color: red;
+    border-radius: 4px;
+}
+
+/* ----- FOOTER ----- */
+.footer {
+    position: sticky;
+    bottom: 0;
+}
