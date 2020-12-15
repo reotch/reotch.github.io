@@ -91,8 +91,8 @@ h1, h2, h3, h4, h5, h6 {
 /* ----- MAIN ----- */
 .container {
     width: 80%;
-    height: 100vh;
-    margin: 0 auto;
+    height: 100%;
+    margin: 0 auto 20px auto;
     padding: 1.25em;
     background-image: linear-gradient(#D6E0C1, #84AD84);
     opacity: 0.7;
@@ -106,7 +106,7 @@ section {
     margin: 0.5em auto;
     padding: 0.25em 0;
     border: 1px solid #25667050;
-    border-left: 5px solid #256670;
+    border-left: 5px solid #A38C3B;
     border-radius: 8px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -124,8 +124,11 @@ article {
     max-width: 50%;
     margin: 0.5em;
     padding: 0.75em;
-    background-color: #256670;
+    /* background-color: #256670; */
+    background-color: #3EACBD;
     border-radius: 10px;
+    opacity: 0.8;
+    align-self: flex-start;
 }
 
 code {
@@ -138,6 +141,7 @@ code {
 
 /* ----- FOOTER ----- */
 .footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    width: 100%;
 }
