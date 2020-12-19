@@ -2,6 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* ----- COLORS ----- */
+/* Color Theme Swatches in Hex */
+.Winter-Ice-1-hex { color: #256670; }
+.Winter-Ice-2-hex { color: #99E6F2; }
+.Winter-Ice-3-hex { color: #4FDAF0; }
+.Winter-Ice-4-hex { color: #476B70; }
+.Winter-Ice-5-hex { color: #3EACBD; }
+
+/* Color Theme Swatches in RGBA */
+.Winter-Ice-1-rgba { color: rgba(37, 102, 112, 1); }
+.Winter-Ice-2-rgba { color: rgba(153, 230, 242, 1); }
+.Winter-Ice-3-rgba { color: rgba(79, 218, 240, 1); }
+.Winter-Ice-4-rgba { color: rgba(71, 107, 112, 1); }
+.Winter-Ice-5-rgba { color: rgba(62, 172, 189, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Winter-Ice-1-hsla { color: hsla(188, 50, 29, 1); }
+.Winter-Ice-2-hsla { color: hsla(188, 77, 77, 1); }
+.Winter-Ice-3-hsla { color: hsla(188, 84, 62, 1); }
+.Winter-Ice-4-hsla { color: hsla(187, 22, 35, 1); }
+.Winter-Ice-5-hsla { color: hsla(188, 50, 49, 1); }
+
 /* ----- BODY/HEADERS ----- */
 * {
     margin: 0;
@@ -14,6 +36,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ----- HEADER ----- */
+/* ----- Header ----- */
+.header {
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(71, 107, 112, 0.8);
+    color: white;
+    font-size: 72px;
+    font-weight: 800;
+    text-shadow: -5px 4px 5px #3EACBD;
+}
+
 /* ----- Navbar ----- */
 .navbar {
     list-style-type: none;
@@ -41,18 +77,21 @@ h1, h2, h3, h4, h5, h6 {
 /* ----- Menu Button ----- */
 .menubtn {
     background-color: #333;
+    width: 80px;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-    border-radius: 0 0 8px 0;
+    /* border-radius: 0 0 8px 0; */
     cursor: pointer;
 }
   
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline;
+    float: left;
+    z-index: 1;
 }
   
 /* Dropdown Content (Hidden by Default) */
@@ -90,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----- MAIN ----- */
 .container {
-    width: 80%;
+    width: 85%;
     height: 100%;
     margin: 0 auto 20px auto;
     padding: 1.25em;
@@ -102,13 +141,24 @@ h1, h2, h3, h4, h5, h6 {
     margin: 4px 0;
 }
 
-section {
+section:nth-of-type(odd) {
     margin: 0.5em auto;
     padding: 0.25em 0;
     border: 1px solid #25667050;
-    border-left: 5px solid #A38C3B;
-    border-radius: 8px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-left: 6px solid #A38C3B;
+    border-bottom: 6px solid #A38C3B;
+    border-radius: 0 8px 2px 8px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+}
+
+section:nth-of-type(even) {
+    margin: 0.5em auto;
+    padding: 0.25em 0;
+    border: 1px solid #25667050;
+    border-right: 6px solid #A38C3B;
+    border-bottom: 6px solid #A38C3B;
+    border-radius: 8px 0 8px 2px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
 }
 
 .section-header {
