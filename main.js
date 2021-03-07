@@ -19,5 +19,10 @@ const user = {
     "githubProfile": "github.com/reotch"
 };
 
+document.getElementById('phone-number').innerHTML = user.phones.voipNumber;
+document.getElementById('email-address').innerHTML = user.email;
+document.getElementById('github-profile').innerHTML = user.githubProfile;
+document.getElementById('personal-web').innerHTML = user.web;
+
 console.log(`${user['firstName']} ${user['lastName']}`);
 console.log(user.phones.voipNumber);
